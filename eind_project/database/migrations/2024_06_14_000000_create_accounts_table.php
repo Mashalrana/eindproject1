@@ -13,7 +13,7 @@ class CreateAccountsTable extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('account_username');
             $table->string('account_password');
-            $table->enum('role', ['admin', 'teacher', 'student', 'roostermaker'])->default('student');
+            $table->enum('role', ['admin', 'teacher', 'student', 'scheduler'])->default('student');
             $table->string('address');
             $table->string('postcode', 10);
             $table->string('city');
